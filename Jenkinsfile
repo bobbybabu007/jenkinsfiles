@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('SCM') {
             steps {
-                sh 'Checkoing out 1-declarative branch'
+                sh 'echo "Checking out 1-declarative branch"'
                 git branch: '1-declarative', url: 'https://github.com/bobbybabu007/jenkinsfiles.git'
             }
         }
