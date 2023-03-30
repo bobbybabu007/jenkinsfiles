@@ -12,7 +12,6 @@ pipeline {
                 git branch: '1-declarative', url: 'https://github.com/bobbybabu007/jenkinsfiles.git'
             }
         }
-    }
         stage('Build') {
             steps {
                 sh 'mvn -B package'
